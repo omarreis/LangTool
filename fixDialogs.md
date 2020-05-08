@@ -37,8 +37,8 @@ then I added:
 
 Which is called on FormCreate, after loading the localization strings with TLang.
 
-Add the dialog texts to TLang (one by one).
-Complete the translations for the new texts, for all languages. 
-So all text translations are in one place.
+* Add the dialog texts to TLang (one by one).
+* Complete the translations for the new texts, for all languages. 
+  So all text translations are in one place.
 
 Note that you *have to* compare your changed FMX.Dialogs.pas with the official version (and apply changes) every time you do a Delphi update, to be in sync 
