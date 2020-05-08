@@ -17,9 +17,9 @@ to delete a single language. To work around that:
 3- Change back to form, double click TLang and import the file edited with LangTool (*.lng)
 Close TLang editor and reopen it to update the languages combo (it is not updated after load)
 
-Also you may need to localize Dialog texts ( Yes, No etc) 
+You may also need to localize Delphi default dialog texts ( Yes, No etc)  not covered by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
-as described in this stackoverflow answer ( the one by omarreis):
+as described in this stackoverflow answer (the one by omarreis):
 
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
