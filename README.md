@@ -10,6 +10,9 @@ Compiled with Delphi 10.3.3
 * Copy original list of texts to clipboard (to use with Google translate) 
 * Paste list of strings from clipboard (to imput Google translate results). 
   Before pasting a list of strings from clipboard **place the cursor in the desired cell**
+  
+Note that automatic translation services sometimes translate words out of context.
+Have a translator - or at least a native speaker - review your app translations.
 
 Interaction between LangTool and TLang is done by means of LNG files
 * On the IDE, double click TLang component to open property editor
