@@ -5,17 +5,27 @@ LangTool is a Firemonkey app (multiplatform). Tested on Windows 10.
 Compiled with Delphi 10.3.3
 
 ## LangTool  features :
+* Load/Save *.LNG files 
 * Edit all languages in the same grid (uses a TStringGrid)
 * Copy original texts to clipboard (to use with Google translate) 
 * Paste list of strings from clipboard (to imput Google translate results) 
-* Load/Save *.LNG files
+
+Interaction between LangTool and TLang is done by means of LNG files
+* On the IDE, double click TLang component to open property editor
+* Import texts from form (labels buttons etc)
+* Save file *.lng
+* Open it with LangTool
+* Add languages (using 2 letter codes like 'ES', 'FR', 'IT' ..) 
+* Complete translation texts, when necessary (leave untranslated texts empty)
+* Save file
+* In the IDE, on TLang property editor, load translation file 
 
 TLang is clearly a work in progress. The original editor has no way 
 to delete a single language. To work around that:
-1- change form to text 
-2- delete TLang.Resources property 
-3- Change back to form, double click TLang and import the file edited with LangTool (*.lng)
-Close TLang editor and reopen it to update the languages combo (it is not updated after load)
+* change form to text 
+* delete TLang.Resources property 
+* Change back to form, double click TLang and import the file edited with LangTool (*.lng)
+* Close TLang editor and reopen it to update the languages combo (it is not updated after load)
 
 You may also need to localize Delphi default dialog texts ( Yes, No etc)  not covered by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
