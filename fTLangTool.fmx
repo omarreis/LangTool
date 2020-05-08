@@ -1,0 +1,333 @@
+object FormTLangTool: TFormTLangTool
+  Left = 0
+  Top = 0
+  Caption = 'LangTool'
+  ClientHeight = 634
+  ClientWidth = 572
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TopToolBar: TToolBar
+    Anchors = []
+    Size.Width = 572.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBarLabel: TLabel
+      Action = TitleAction
+      Align = Contents
+      Enabled = True
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 572.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'LangTool by oMAR'
+    end
+    object btnBack: TSpeedButton
+      Action = PreviousTabAction1
+      Align = MostLeft
+      Enabled = True
+      ImageIndex = -1
+      Size.Width = 65.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+    end
+    object btnNext: TSpeedButton
+      Action = NextTabAction1
+      Align = MostRight
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 528.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'nexttoolbutton'
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 572.000000000000000000
+    Size.Height = 546.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = None
+    Sizes = (
+      572s
+      546s
+      572s
+      546s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Caption Tab Item #1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object layoutTopLangPg1: TLayout
+        Align = Top
+        Size.Width = 572.000000000000000000
+        Size.Height = 73.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = btnClearAllClick
+        object btnLoadLngFile: TButton
+          Position.X = 144.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Load lng file'
+          OnClick = btnLoadLngFileClick
+        end
+        object Lang1: TLang
+          StoreInForm = False
+          Lang = 'en'
+          Left = 312
+          Top = 112
+        end
+        object btnPasteLanguage: TButton
+          Position.X = 144.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Text = 'Paste transl strings '
+          OnClick = btnPasteLanguageClick
+        end
+        object btnSaveFileAs: TButton
+          Position.X = 272.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Save lng file'
+          OnClick = btnSaveFileAsClick
+        end
+        object btnClearAll: TButton
+          Position.X = 16.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Clear All'
+          OnClick = btnClearAllClick
+        end
+        object btnAddLanguage: TButton
+          Position.X = 273.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Add Language..'
+          OnClick = btnAddLanguageClick
+        end
+        object btnCopyTextsToClipboard: TButton
+          Position.X = 16.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 124.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Copy original texts'
+          OnClick = btnCopyTextsToClipboardClick
+        end
+      end
+      object TransGrid: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 572.000000000000000000
+        Size.Height = 473.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        RowCount = 1000
+        Viewport.Width = 552.000000000000000000
+        Viewport.Height = 432.000000000000000000
+        object StringColumn1: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn2: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn3: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn4: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn5: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn6: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn7: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        object StringColumn8: TStringColumn
+        end
+        object StringColumn9: TStringColumn
+        end
+        object StringColumn10: TStringColumn
+        end
+        object StringColumn11: TStringColumn
+        end
+        object StringColumn12: TStringColumn
+        end
+        object StringColumn13: TStringColumn
+        end
+        object StringColumn14: TStringColumn
+        end
+        object StringColumn15: TStringColumn
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Caption Tab Item #2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object rectAboutLangTool: TRectangle
+        Anchors = []
+        Fill.Color = claBlack
+        Position.X = 126.615295410156300000
+        Position.Y = 40.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 281.000000000000000000
+        Size.PlatformDefault = False
+        XRadius = 15.000000000000000000
+        YRadius = 15.000000000000000000
+        object labVersion: TLabel
+          StyledSettings = [Family, Style]
+          Position.X = 32.000000000000000000
+          Position.Y = 48.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'LangTool   ver 1.0'
+          TabOrder = 0
+        end
+        object Label1: TLabel
+          StyledSettings = [Family, Style]
+          Position.X = 32.000000000000000000
+          Position.Y = 80.000000000000000000
+          Size.Width = 257.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'by oMAR'
+          TabOrder = 1
+        end
+        object linkGit: TLabel
+          StyledSettings = [Family, Style]
+          Position.X = -16.000000000000000000
+          Position.Y = 128.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'www.github.com/omarreis/LangTool'
+          TabOrder = 2
+        end
+        object Label2: TLabel
+          StyledSettings = [Family, Style]
+          Position.X = 32.000000000000000000
+          Position.Y = 152.000000000000000000
+          Size.Width = 249.000000000000000000
+          Size.Height = 89.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'Delphi TLang *.lng file editor for software localizaton'
+          TabOrder = 3
+        end
+      end
+    end
+  end
+  object BottomToolBar: TToolBar
+    Align = Bottom
+    Anchors = [akLeft]
+    Position.Y = 590.000000000000000000
+    Size.Width = 572.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 2
+    object Label3: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 529.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'check https://github.com/omarreis/LangTool'
+      TabOrder = 1
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'LNG'
+    Filter = 'TLang LNG format|*.lng'
+    Left = 216
+    Top = 216
+  end
+  object OpenDialog1: TOpenDialog
+    DefaultExt = 'LNG'
+    Filter = 'TLang LNG format|*.lng'
+    Left = 216
+    Top = 272
+  end
+  object ActionList1: TActionList
+    Left = 392
+    Top = 112
+    object TitleAction: TControlAction
+      Category = 'Tab'
+      Text = 'TitleAction'
+      OnUpdate = TitleActionUpdate
+    end
+    object PreviousTabAction1: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+      ShortCut = 137
+    end
+    object NextTabAction1: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControl1
+    end
+  end
+end

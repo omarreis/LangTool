@@ -1,0 +1,117 @@
+inherited FormTLangTool_iPhone4in: TFormTLangTool_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited TopToolBar: TToolBar
+    Size.Width = 320.000000000000000000
+    inherited ToolBarLabel: TLabel
+      Size.Width = 320.000000000000000000
+    end
+    inherited btnNext: TSpeedButton
+      Position.X = 276.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Sizes = (
+      320s
+      460s
+      320s
+      460s)
+    inherited TabItem1: TTabItem
+      Size.Width = 11.000000000000000000
+      Size.Height = 11.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited layoutTopLangPg1: TLayout
+        Size.Width = 320.000000000000000000
+        inherited btnLoadLngFile: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 104.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+        inherited btnPasteLanguage: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 104.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+        inherited btnSaveFileAs: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 200.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+        inherited btnClearAll: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 8.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+        inherited btnAddLanguage: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 214.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+        inherited btnCopyTextsToClipboard: TButton
+          StyledSettings = [Family, Style, FontColor]
+          Position.X = 8.000000000000000000
+          Size.Width = 100.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+        end
+      end
+      inherited TransGrid: TStringGrid
+        Size.Width = 320.000000000000000000
+        Size.Height = 387.000000000000000000
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 387.000000000000000000
+        inherited StringColumn1: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn2: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn3: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn4: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn5: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn6: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+        inherited StringColumn7: TStringColumn
+          Size.Width = 150.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      Size.Width = 11.000000000000000000
+      Size.Height = 11.000000000000000000
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      inherited rectAboutLangTool: TRectangle
+        Position.X = -126.626876831054700000
+        Position.Y = -49.563552856445310000
+        inherited Label2: TLabel
+          TextSettings.Font.Size = 16.000000000000000000
+        end
+      end
+    end
+  end
+  inherited BottomToolBar: TToolBar
+    Position.Y = 504.000000000000000000
+    Size.Width = 320.000000000000000000
+    inherited Label3: TLabel
+      StyledSettings = [Family, FontColor]
+      TextSettings.Font.Size = 10.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end
