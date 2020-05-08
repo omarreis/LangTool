@@ -14,12 +14,12 @@ Compiled with Delphi 10.3.3
 Interaction between LangTool and TLang is done by means of LNG files
 * On the IDE, double click TLang component to open property editor
 * Import texts from form (labels buttons etc)
-* Save file *.lng
+* Save file *.lng*. No languages yet.
 * Open it with LangTool
-* Add languages (using 2 letter codes like 'ES', 'FR', 'IT' ..) 
-* Complete translation texts, when necessary (leave untranslated texts empty)
-* Save file
-* In the IDE, on TLang property editor, load translation file 
+* Add languages using 2 letter codes like 'ES', 'FR', 'IT' .. 
+* Complete translation texts, editing grid cells. Leave untranslated texts empty. 
+* Save *.lng file
+* On the IDE, TLang property editor, load translation file.
 
 TLang is clearly a work in progress. The original editor has no way 
 to delete a single language. To work around that:
@@ -28,11 +28,10 @@ to delete a single language. To work around that:
 * Change back to form, double click TLang and import the file edited with LangTool (*.lng)
 * Close TLang editor and reopen it to update the languages combo (it is not updated after load)
 
-You may also need to localize Delphi default dialog texts ( Yes, No etc)  not covered by TLang.
+You may also need to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
 as described in this stackoverflow answer (the one by omarreis):
 
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
-
-![LangTool screen shot](LangToolShot.png)
+![LangTool screen screenshot](LangToolShot.png)
