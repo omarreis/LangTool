@@ -1,4 +1,9 @@
-Expanding on raudel.s.j answer, I found that changing constant ButtonCaptions[] did not work (at least for Android). So I copyed FMX.Dialogs.pas to my project directory and changed the **const** to a **var**
+from https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
+
+# How to localize Firemonkey Dialogs
+
+Changing constants ButtonCaptions[] did not work (not at least for Android). 
+So I copyed FMX.Dialogs.pas to my project directory and changed the **const** to a **var**
 
 FMX.Dialogs.pas
 
