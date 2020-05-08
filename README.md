@@ -1,10 +1,10 @@
 # LangTool
-This app offers some features not found in the original TLang editor.
+This app offers some features not found in the original TLang IDE editor.
 
 LangTool is a Firemonkey app (multiplatform). Tested on Windows 10.
 Compiled with Delphi 10.3.3
 
-LangTool  features :
+## LangTool  features :
 * Edit all languages in the same grid (uses a TStringGrid)
 * Copy original texts to clipboard (to use with Google translate) 
 * Paste list of strings from clipboard (to imput Google translate results) 
