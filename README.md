@@ -1,7 +1,10 @@
 # LangTool
 This app offers some features not found in the original TLang editor.
 
-LangTool special features :
+LangTool is a Firemonkey app (multi8platform). Tested on Windows
+Compiled with Delphi 10.3.3
+
+LangTool  features :
 * Edit all languages in the same grid (uses a TStringGrid)
 * Copy original texts to clipboard (to use with Google translate) 
 * Paste list of strings from clipboard (to imput Google translate results) 
@@ -19,3 +22,6 @@ localize dialog texts ( Yes, No etc)
 Check this stackoverflow answer:
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
+
+
+![LangTool screen shot](LangToolShot.png)
