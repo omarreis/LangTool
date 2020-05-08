@@ -28,8 +28,10 @@ TLang is clearly a work in progress. The original editor has no way
 to delete a single language. To work around that:
 * change form to text 
 * delete TLang.Resources property 
-* Change back to form, double click TLang and import the file edited with LangTool (*.lng)
-* Close TLang editor and reopen it to update the languages combo (it is not updated after load)
+* change back to form, double click TLang and import the file edited with LangTool (*.lng)
+* close TLang editor and reopen it to update the languages combo (it is not updated after load)
+
+TODO: Localize LangTool !!!!   :)
 
 You may also need to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
