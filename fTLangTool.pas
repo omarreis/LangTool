@@ -54,6 +54,7 @@ type
     linkGit: TLabel;
     Label2: TLabel;
     Label3: TLabel;
+    btnDelLanguage: TButton;
     procedure FormCreate(Sender: TObject);
     procedure TitleActionUpdate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
@@ -63,6 +64,7 @@ type
     procedure btnAddLanguageClick(Sender: TObject);
     procedure btnCopyTextsToClipboardClick(Sender: TObject);
     procedure btnPasteLanguageClick(Sender: TObject);
+    procedure btnDelLanguageClick(Sender: TObject);
   private
     procedure populateGridWithLanguages;
     procedure copyGridToLang1;
@@ -70,6 +72,7 @@ type
     procedure ClearGrid;
     procedure DoClearAll;
     procedure DoAddLanguage(const aLang: String);
+    procedure DoDeleteColumn;
   public
   end;
 
@@ -214,7 +217,37 @@ begin
   StringToClipboard(S);
 end;
 
-procedure TFormTLangTool.DoClearAll;
+procedure TFormTLangTool.btnDelLanguageClick(Sender: TObject);
+var c:integer; aCol:TColumn;
+begin
+  c := TransGrid.ColumnIndex;
+  if (c>0) then
+    begin
+      aCol := TransGrid.Columns[c];
+      MessageDlg( 'Delete column '+aCol.Header+'?',
+           System.UITypes.TMsgDlgType.mtConfirmation,
+           [TMsgDlgBtn.mbYes, TMsgDlgBtn.mbNo], 0,
+              procedure(const AResult: TModalResult)   //non modal msg box for Android
+              begin
+                case AResult of
+                  mrYes: DoDeleteColumn; // pressed yes, delete it
+                  mrNo: ;
+                end;
+              end
+          );
+    end;
+end;
+
+procedure TFormTLangTool.DoDeleteColumn;
+var c:integer; aCol:TColumn;
+begin
+  c := TransGrid.ColumnIndex;
+  aCol := TransGrid.Columns[c];
+  aCol.DisposeOf;
+end;
+
+
+procedure TFormTLangTool.DoClearAll;   // clear grid and Lang1
 var c:integer; aCol:TColumn;
 begin
   for c:=1 to TransGrid.ColumnCount-1 do //clear grid headers
@@ -234,8 +267,7 @@ begin
     begin
       fn := OpenDialog1.FileName;
       Lang1.LoadFromFile(fn);
-
-      populateGridWithLanguages;     //  Lang1 --> Grid
+      populateGridWithLanguages;   //  Lang1 --> Grid
     end;
 end;
 

@@ -3,7 +3,7 @@ object FormTLangTool: TFormTLangTool
   Top = 0
   Caption = 'LangTool'
   ClientHeight = 634
-  ClientWidth = 572
+  ClientWidth = 775
   FormFactor.Width = 1440
   FormFactor.Height = 900
   FormFactor.Devices = [Desktop]
@@ -11,7 +11,7 @@ object FormTLangTool: TFormTLangTool
   DesignerMasterStyle = 0
   object TopToolBar: TToolBar
     Anchors = []
-    Size.Width = 572.000000000000000000
+    Size.Width = 775.000000000000000000
     Size.Height = 44.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -20,7 +20,7 @@ object FormTLangTool: TFormTLangTool
       Align = Contents
       Enabled = True
       StyledSettings = [Family, Style, FontColor]
-      Size.Width = 572.000000000000000000
+      Size.Width = 775.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'toollabel'
@@ -43,7 +43,7 @@ object FormTLangTool: TFormTLangTool
       Align = MostRight
       Enabled = True
       ImageIndex = -1
-      Position.X = 528.000000000000000000
+      Position.X = 731.000000000000000000
       Size.Width = 44.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
@@ -53,7 +53,7 @@ object FormTLangTool: TFormTLangTool
   object TabControl1: TTabControl
     Align = Client
     FullSize = True
-    Size.Width = 572.000000000000000000
+    Size.Width = 775.000000000000000000
     Size.Height = 546.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
@@ -61,9 +61,9 @@ object FormTLangTool: TFormTLangTool
     TabOrder = 1
     TabPosition = None
     Sizes = (
-      572s
+      775s
       546s
-      572s
+      775s
       546s)
     object TabItem1: TTabItem
       CustomIcon = <
@@ -80,18 +80,18 @@ object FormTLangTool: TFormTLangTool
       ExplicitSize.cy = 8.000000000000000000
       object layoutTopLangPg1: TLayout
         Align = Top
-        Size.Width = 572.000000000000000000
-        Size.Height = 73.000000000000000000
+        Size.Width = 775.000000000000000000
+        Size.Height = 65.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         OnClick = btnClearAllClick
         object btnLoadLngFile: TButton
-          Position.X = 144.000000000000000000
-          Position.Y = 8.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 135.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 4
+          TabOrder = 5
           Text = 'Load lng file'
           OnClick = btnLoadLngFileClick
         end
@@ -102,67 +102,77 @@ object FormTLangTool: TFormTLangTool
           Top = 112
         end
         object btnPasteLanguage: TButton
-          Position.X = 144.000000000000000000
-          Position.Y = 40.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 135.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 5
-          Text = 'Paste transl strings '
+          TabOrder = 6
+          Text = 'Paste transl. strings'
           OnClick = btnPasteLanguageClick
         end
         object btnSaveFileAs: TButton
-          Position.X = 272.000000000000000000
-          Position.Y = 8.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 263.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           Text = 'Save lng file'
           OnClick = btnSaveFileAsClick
         end
         object btnClearAll: TButton
-          Position.X = 16.000000000000000000
-          Position.Y = 8.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 7.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
+          TabOrder = 4
           Text = 'Clear All'
           OnClick = btnClearAllClick
         end
         object btnAddLanguage: TButton
-          Position.X = 273.000000000000000000
-          Position.Y = 40.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 264.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 2
+          TabOrder = 3
           Text = 'Add Language..'
           OnClick = btnAddLanguageClick
         end
         object btnCopyTextsToClipboard: TButton
-          Position.X = 16.000000000000000000
-          Position.Y = 40.000000000000000000
-          Size.Width = 124.000000000000000000
-          Size.Height = 26.000000000000000000
+          Position.X = 7.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
           Text = 'Copy original texts'
           OnClick = btnCopyTextsToClipboardClick
+        end
+        object btnDelLanguage: TButton
+          Position.X = 392.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 114.000000000000000000
+          Size.Height = 23.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Delete column'
+          OnClick = btnDelLanguageClick
         end
       end
       object TransGrid: TStringGrid
         Align = Client
         CanFocus = True
         ClipChildren = True
-        Size.Width = 572.000000000000000000
-        Size.Height = 473.000000000000000000
+        Size.Width = 775.000000000000000000
+        Size.Height = 481.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         RowCount = 1000
-        Viewport.Width = 552.000000000000000000
-        Viewport.Height = 432.000000000000000000
+        Viewport.Width = 755.000000000000000000
+        Viewport.Height = 440.000000000000000000
         object StringColumn1: TStringColumn
           Size.Width = 150.000000000000000000
         end
@@ -218,7 +228,7 @@ object FormTLangTool: TFormTLangTool
       object rectAboutLangTool: TRectangle
         Anchors = []
         Fill.Color = claBlack
-        Position.X = 126.615295410156300000
+        Position.X = 227.091522216796900000
         Position.Y = 40.000000000000000000
         Size.Width = 313.000000000000000000
         Size.Height = 281.000000000000000000
@@ -283,7 +293,7 @@ object FormTLangTool: TFormTLangTool
     Align = Bottom
     Anchors = [akLeft]
     Position.Y = 590.000000000000000000
-    Size.Width = 572.000000000000000000
+    Size.Width = 775.000000000000000000
     Size.Height = 44.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'bottomtoolbar'
