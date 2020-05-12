@@ -44,3 +44,5 @@ Which is called on FormCreate, after loading the localization strings with TLang
   So all text translations are in one place.
 
 Note that you *have to* compare your changed FMX.Dialogs.pas with the official version (and apply changes) every time you do a Delphi update, to be in sync 
+
+https://github.com/omarreis/LangTool/blob/master/readme.md
