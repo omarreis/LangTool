@@ -2,7 +2,9 @@ from https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-v
 
 # How to localize Firemonkey Dialogs
 
-Changing constants ButtonCaptions[] did not work (not at least for Android). 
+Firemonkey dialog messages like button texts 'Yes', 'No' are defined as const in FMX.Dialogs.pas.
+Changing it for localization is not allowed using default compiler settings 
+Compiler gives 'left side cannot be assigned'
 So I copyed FMX.Dialogs.pas to my project directory and changed the **const** to a **var**
 
 FMX.Dialogs.pas
