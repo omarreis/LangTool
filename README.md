@@ -42,7 +42,9 @@ TODO: Localize LangTool !!!!   :)
 
 You may also need to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
-as described in this stackoverflow answer (the one by omarreis):
+as described in this stackoverflow answer (the one by omarreis)
+
+https://github.com/omarreis/LangTool/blob/master/fixDialogs.md
 
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
