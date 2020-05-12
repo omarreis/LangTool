@@ -14,22 +14,29 @@ Compiled with Delphi 10.3.3
 Note that automatic translation services sometimes translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
 
-Interaction between LangTool and TLang is done by means of LNG files
+Interaction between LangTool and TLang is done by means of LNG files.
+
 * On the IDE, double click TLang component to open property editor
 * Import texts from form (labels buttons etc)
 * Save file *.lng*. No languages yet.
-* Open it with LangTool
+* Open the file with LangTool
 * Add languages using 2 letter codes like 'ES', 'FR', 'IT' .. 
-* Complete translation texts, editing grid cells. Leave untranslated texts empty. 
+* Complete translation texts, editing grid cells ( in plkace editing). 
+Leave untranslated texts empty. 
 * Save *.lng file
 * On the IDE, TLang property editor, load translation file.
 
-TLang is clearly a work in progress. The original editor has no way 
-to delete a single language. To work around that:
-* change form to text 
-* delete TLang.Resources property 
-* change back to form, double click TLang and import the file edited with LangTool (*.lng)
+TLang is a work in progress. The original editor has no way 
+to delete a single language. If you open the lng file 
+on top of existing translations, they get duplicated.
+
+To work around that, what I did was:
+
+* In your app , right-click the form change form-to-text 
+* Locate TLang component (f.e. Lang1) delete ResourcesBin property 
+* change back to form, double click the empty TLang and import the file edited with LangTool (*.lng)
 * close TLang editor and reopen it to update the languages combo (it is not updated after load)
+
 
 TODO: Localize LangTool !!!!   :)
 
