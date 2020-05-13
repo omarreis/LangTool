@@ -6,11 +6,11 @@ Compiled with Delphi 10.3.3
 
 ## LangTool  features :
 * Load/Save *.LNG files 
-* Edit all languages in the same grid (uses a TStringGrid, edit strings in place)
-* Copy original list of texts to clipboard (f.e. to use with Google Translate) 
+* Edit all languages in the same grid (uses a TStringGrid, edit strings in place).
+* Copy original list of texts to clipboard (f.e. to use with Google Translate) .
 * Paste list of strings from clipboard (input translation results). 
-  Before pasting a list of strings from clipboard **place the cursor in the desired cell** 
-  Place cursor in the top of the column to paste a new language
+  Before pasting a list of strings from clipboard **place the cursor in the desired cell** .
+  Place cursor in the top of the column to paste a new language.
   
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
