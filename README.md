@@ -36,3 +36,21 @@ The original editor has no way to delete a language or reset the component.
 If you open a lng file on top of existing translations, they get duplicated.
 
 To work around that, what I did was:
+
+* In your app , right-click the form change form-to-text 
+* Locate TLang component (ex. Lang1) delete ResourcesBin property 
+* change back to form mode, double click the empty TLang and import the file edited with LangTool (*.lng)
+* close TLang editor and reopen it to update the languages combo (it is not updated after file load)
+
+TODO: Localize LangTool !!!!   :)
+
+You may also need to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
+To do that copy FMX.Dialogs.pas to project directory and change it 
+as described in this stackoverflow answer (the one by omarreis)
+
+https://github.com/omarreis/LangTool/blob/master/fixDialogs.md
+
+https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
+
+![LangTool screen screenshot](LangToolShot.png)
+
