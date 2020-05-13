@@ -55,6 +55,7 @@ type
     Label2: TLabel;
     Label3: TLabel;
     btnDelLanguage: TButton;
+    labHeaderLangTool: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure TitleActionUpdate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
@@ -80,6 +81,9 @@ var
   FormTLangTool: TFormTLangTool;
 
 implementation
+
+uses
+   omNativeLanguage;  //
 
 {$R *.fmx}
 {$R *.LgXhdpiPh.fmx ANDROID}
@@ -111,6 +115,23 @@ begin
     if not Value.TryAsType(_s) then
       _s := '';
   end;
+end;
+
+{ TFormTLangTool }
+procedure TFormTLangTool.FormCreate(Sender: TObject);
+var aLang:String;
+begin
+  { This defines the default active tab at runtime }
+  TabControl1.First(TTabTransition.None);
+
+  // This app is not localized at this time, but this is how you get the
+  // navive language and localize your form
+  aLang := Copy(NativeLanguage,1,2);   // like 'en' or 'pt'   get native language ( drop coutry part )
+  if (CompareText( aLang,'en')<>0) then   // en is default
+    begin
+      LoadLangFromStrings( Lang1.LangStr[aLang] );    // load language from resources, if available
+      // LocalizeDialogButtons;
+    end;
 end;
 
 procedure TFormTLangTool.TitleActionUpdate(Sender: TObject);
@@ -261,19 +282,21 @@ begin
 end;
 
 procedure TFormTLangTool.btnLoadLngFileClick(Sender: TObject);
-var fn:String;
+var fn,s:String;
 begin
   if OpenDialog1.Execute then
     begin
       fn := OpenDialog1.FileName;
       Lang1.LoadFromFile(fn);
       populateGridWithLanguages;   //  Lang1 --> Grid
+
+      s := 'Loaded '+IntToStr(Lang1.Original.Count)+' texts '+IntToStr(Lang1.Resources.Count)+' languages';
+      labHeaderLangTool.Text := s;
     end;
 end;
 
 procedure TFormTLangTool.btnPasteLanguageClick(Sender: TObject);
-var S,aText:String; r,c,arow:integer; SL:TStringList;
-  i: Integer;
+var S,aText:String; r,c,arow,i:integer; SL:TStringList;
 const crlf=#13#10;
 begin
   StringFromClipboard(S);
@@ -362,20 +385,6 @@ begin
       copyGridToLang1;
 
       Lang1.SaveToFile(fn);
-    end;
-end;
-
-procedure TFormTLangTool.FormCreate(Sender: TObject);
-var aLang:String;
-begin
-  { This defines the default active tab at runtime }
-  TabControl1.First(TTabTransition.None);
-
-  aLang := 'pt';  //teste
-  if (CompareText( aLang,'en')<>0) then   // en is default
-    begin
-      LoadLangFromStrings( Lang1.LangStr[aLang] );    // load language from resources, if available
-      // LocalizeDialogButtons;
     end;
 end;
 

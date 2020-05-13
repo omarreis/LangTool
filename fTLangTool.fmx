@@ -161,6 +161,15 @@ object FormTLangTool: TFormTLangTool
           Text = 'Delete column'
           OnClick = btnDelLanguageClick
         end
+        object labHeaderLangTool: TLabel
+          Position.X = 392.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 321.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = '...'
+          TabOrder = 7
+        end
       end
       object TransGrid: TStringGrid
         Align = Client
@@ -228,7 +237,7 @@ object FormTLangTool: TFormTLangTool
       object rectAboutLangTool: TRectangle
         Anchors = []
         Fill.Color = claBlack
-        Position.X = 227.091522216796900000
+        Position.X = 227.091552734375000000
         Position.Y = 40.000000000000000000
         Size.Width = 313.000000000000000000
         Size.Height = 281.000000000000000000

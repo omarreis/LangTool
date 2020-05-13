@@ -69,9 +69,9 @@ inherited FormTLangTool_LgXhdpiPh: TFormTLangTool_LgXhdpiPh
       end
       inherited TransGrid: TStringGrid
         Size.Width = 450.000000000000000000
-        Size.Height = 526.000000000000000000
+        Size.Height = 534.000000000000000000
         Viewport.Width = 450.000000000000000000
-        Viewport.Height = 526.000000000000000000
+        Viewport.Height = 534.000000000000000000
         inherited StringColumn1: TStringColumn
           Size.Width = 150.000000000000000000
         end
@@ -99,8 +99,8 @@ inherited FormTLangTool_LgXhdpiPh: TFormTLangTool_LgXhdpiPh
       ExplicitSize.cx = 8.000000000000000000
       ExplicitSize.cy = 8.000000000000000000
       inherited rectAboutLangTool: TRectangle
-        Position.X = -39.676342010498050000
-        Position.Y = 120.965217590332000000
+        Position.X = -103.134803771972700000
+        Position.Y = 174.189498901367200000
         inherited Label2: TLabel
           TextSettings.Font.Size = 16.000000000000000000
         end
