@@ -25,7 +25,7 @@ Translate() function does translations at run time.
 * Copy original list of texts to clipboard (ex: to use with Google Translate) 
 * Paste list of strings from clipboard (input translation results). 
   Before pasting a list of strings from clipboard remember to **place the cursor in the desired cell** 
-  Place cursor in the top of the column to paste a whole new language ( list of strings )
+  Place cursor on the top of the column to paste a whole new language ( list of strings )
 * Drag columns ( change language order, not that this matters.. )   
   
 Note that automatic translation services a lot of times translate words out of context.
