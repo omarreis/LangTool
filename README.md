@@ -6,6 +6,18 @@ This app offers some features not found in the original TLang IDE editor.
 LangTool is a Firemonkey app (multiplatform). Tested on Windows 10.
 Compiled with Delphi 10.3.3
 
+## Whats inside LNG files ?
+* List of *Original* texts (TStrings) 
+* List of translation *Resources*
+  Each resource (language) has: 
+    * lang code: two letter ISO language code ( use capital letters )
+    * Strings: list of text=translation lines for the language
+
+Languages can be loaded from a file or from form resources.
+The last loaded language goes into global var Lang:TStringList
+
+Translate() function does translations at run time.
+    
 ## LangTool  features :
 * Load/Save *.LNG files 
 * Add/delete languages
