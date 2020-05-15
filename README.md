@@ -48,8 +48,8 @@ The original editor has no way to delete a language or reset the component.
 If you open a lng file on top of existing translations, they get duplicated.
 
 To work around that, what I did was:
-
-* In your app , right-click the form change form-to-text 
+* Save previous work
+* In your app, right-click the form change form-to-text 
 * Locate TLang component (ex. Lang1) delete ResourcesBin property 
 * change back to form mode, double click the empty TLang and import the file edited with LangTool (*.lng)
 * close TLang editor and reopen it to update the languages combo (it is not updated after file load)
