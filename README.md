@@ -40,7 +40,10 @@ Right-click a TLang component on a Form. Now you have 2 options:
 * Show LangTool Editor..              <--- LangTool 
 * Show IDE Lang Designer..            <--- Original component editor
 
-Original editor can be used to import texts from form, export templates  and LNG files
+Original editor can be used to import texts from form, export templates  and LNG files.
+The original IDE editor, however, cannot delete languages, or edit all
+languages in the same grid, or copy-paste languages to-from translation services.
+For that you now have LangTool   :)
 
 TODO: Localize LangTool !!!!   :)
 
