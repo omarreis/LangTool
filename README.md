@@ -1,3 +1,5 @@
+![LangTool logo](LangToolLogo.png)
+
 # LangTool
 LangTool is a language editor for Delphi Firemonkey, to help with app localization.
 It manages LNG ( language files ) to be used with component TLang.
@@ -36,6 +38,8 @@ Have a translator - or at least a native speaker - review your app translations.
 ## LangTool installation
 LangTool installs on the IDE as a design time package.
 Compile *dclLangTool.dpk* and install it.
+
+![TLang menu](TLangMenu.png)
 
 Right-click a TLang component on a Form. Now you have 2 options:
 * Show LangTool Editor..              <--- LangTool 
