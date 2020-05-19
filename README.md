@@ -48,7 +48,9 @@ For that you now have LangTool   :)
 
 TODO: Localize LangTool !!!!   :)
 
-You may also need to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
+But wait...There is more!
+
+You may want to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
 To do that copy FMX.Dialogs.pas to project directory and change it 
 as described in this stackoverflow answer (the one by omarreis)
 
