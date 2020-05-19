@@ -33,8 +33,9 @@ Translate() function does translations at run time.
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
 
+## LangTool installation
 LangTool installs on the IDE as a design time package.
-Compile dclLangTool.dpk and install it.
+Compile *dclLangTool.dpk* and install it.
 
 Now right-click a TLang component on a form. Now you have 2 options:
 * Show LangTool Editor..              <--- LangTool 
