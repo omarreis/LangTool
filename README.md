@@ -4,7 +4,7 @@ It manages LNG ( language files ) to be used with component TLang.
 This app offers some features not found in the original TLang IDE Language Designer.
 
 LangTool can installed on the Delphi IDE as a design time package
-or run as a desktop app. The pachkage contains no new components, only an 
+or run as a desktop app. The package contains no new components, only an 
 alternative TLang Component Editor.
 
 Tested on Windows 10 (Delphi 10.3.3)
