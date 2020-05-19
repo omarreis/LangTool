@@ -62,6 +62,6 @@ https://github.com/omarreis/LangTool/blob/master/fixDialogs.md
 
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
-![LangTool screen screenshot] (LangToolShot.png) 
+![LangTool screen screenshot](LangToolShot.png) 
 
 
