@@ -3,7 +3,9 @@ LangTool is a language editor for Delphi Firemonkey. It helps with app localizat
 The program manages LNG ( language files ) to be used with component TLang.
 This app offers some features not found in the original TLang IDE editor.
 
-LangTool is a Firemonkey app (multiplatform). Tested on Windows 10.
+LangTool can installed on the Delphi IDE or run as a desktop app.
+Tested on Windows 10.
+
 Compiled with Delphi 10.3.3
 
 ## What's inside LNG files ?
@@ -31,28 +33,15 @@ Translate() function does translations at run time.
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
 
-Interaction between LangTool and the Delphi IDE is done by means of LNG files.
+LangTool installs on the IDE as a design time package.
+Compile dclLangTool.dpk and install it.
 
-* On the IDE, double-click TLang component in your form to open the property editor
-* Import texts from form (labels buttons etc)
-* Save file YourAppName.lng. No languages yet.
-* Open the file with LangTool
-* Add languages using 2 letter codes like 'ES', 'FR', 'IT' .. 
-* Complete translation texts, editing grid cells ( in place editing). 
-Leave untranslated texts empty. 
-* Save .lng file
-* On the IDE, TLang property editor, load translation file.
+Now right-click a TLangComponent on a form. Now you have 2 options:
+* Show LangTool Editor..
+* Show IDE Lang Designer..
 
-TLang seems to be a work  in progress (as of D 10.3.3)  
-The original editor has no way to delete a language or reset the component. 
-If you open a lng file on top of existing translations, they get duplicated.
+Original editor can be used to import texts from form, export templates  and LNG files
 
-To work around that, what I did was:
-* Save previous work
-* In your app, right-click the form change form-to-text 
-* Locate TLang component (ex. Lang1) delete ResourcesBin property 
-* change back to form mode, double click the empty TLang and import the file edited with LangTool (*.lng)
-* close TLang editor and reopen it to update the languages combo (it is not updated after file load)
 
 TODO: Localize LangTool !!!!   :)
 
