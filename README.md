@@ -22,7 +22,7 @@ The last loaded language goes into global var Lang:TStringList
 
 Translate() function does translations at run time.
     
-## LangTool  features :
+## LangTool  features : 
 * Load/Save *.LNG files 
 * Add/delete languages
 * Edit all languages in the same grid (uses a TStringGrid, edit strings in place)
