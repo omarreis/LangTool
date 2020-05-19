@@ -20,7 +20,7 @@ Tested on Windows 10 (Delphi 10.3.3)
 Languages can be loaded from a file or from form resources.
 The last loaded language goes into global var Lang:TStringList
 
-Translate() function does translations at run time.
+Translate() function does translations at run time. 
     
 ## LangTool  features : 
 * Load/Save *.LNG files 
