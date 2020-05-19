@@ -10,8 +10,7 @@ Compiled with Delphi 10.3.3
 
 ## What's inside LNG files ?
 * List of *Original* texts (TStrings) 
-* List of translation *Resources*
-  Each resource (language) has: 
+* List of translation *Resources*.   Each resource (language) has: 
     * lang code: two letter ISO language code ( use capital letters )
     * Strings: list of text=translation lines for the language
 
@@ -37,7 +36,7 @@ Have a translator - or at least a native speaker - review your app translations.
 LangTool installs on the IDE as a design time package.
 Compile *dclLangTool.dpk* and install it.
 
-Now right-click a TLang component on a form. Now you have 2 options:
+Right-click a TLang component on a Form. Now you have 2 options:
 * Show LangTool Editor..              <--- LangTool 
 * Show IDE Lang Designer..            <--- Original component editor
 
