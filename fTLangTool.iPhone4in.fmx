@@ -62,12 +62,15 @@ inherited FormTLangTool_iPhone4in: TFormTLangTool_iPhone4in
           Size.Width = 100.000000000000000000
           TextSettings.Font.Size = 10.000000000000000000
         end
+        inherited edTranslationTest: TEdit
+          Size.Height = 30.000000000000000000
+        end
       end
       inherited TransGrid: TStringGrid
         Size.Width = 320.000000000000000000
-        Size.Height = 387.000000000000000000
+        Size.Height = 363.000000000000000000
         Viewport.Width = 320.000000000000000000
-        Viewport.Height = 387.000000000000000000
+        Viewport.Height = 363.000000000000000000
         inherited StringColumn1: TStringColumn
           Size.Width = 150.000000000000000000
         end
@@ -97,8 +100,8 @@ inherited FormTLangTool_iPhone4in: TFormTLangTool_iPhone4in
       ExplicitSize.cx = 8.000000000000000000
       ExplicitSize.cy = 8.000000000000000000
       inherited rectAboutLangTool: TRectangle
-        Position.X = -126.626876831054700000
-        Position.Y = -49.563552856445310000
+        Position.X = -156.489959716796900000
+        Position.Y = -121.054252624511700000
         inherited Label2: TLabel
           TextSettings.Font.Size = 16.000000000000000000
         end

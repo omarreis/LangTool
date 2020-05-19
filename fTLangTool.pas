@@ -1,12 +1,12 @@
-unit fTLangTool;
+unit fTLangTool;  // TFormTLangTool
 
 interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Graphics, FMX.Forms, FMX.Dialogs, FMX.TabControl, System.Actions, FMX.ActnList,
-  FMX.Objects, FMX.StdCtrls, System.Rtti, FMX.Grid.Style, FMX.Grid, Fmx.Platform,
-  FMX.ScrollBox, FMX.Layouts, FMX.Controls.Presentation;
+  FMX.Objects, FMX.StdCtrls, System.Rtti, FMX.Grid.Style, FMX.Grid, Fmx.Platform, FMX.Styles,
+  FMX.ScrollBox, FMX.Layouts, FMX.Controls.Presentation, FMX.Edit;
 
 type
   TFormTLangTool = class(TForm)
@@ -56,6 +56,11 @@ type
     Label3: TLabel;
     btnDelLanguage: TButton;
     labHeaderLangTool: TLabel;
+    btnTestTrans: TButton;
+    btnOk: TButton;
+    btnCancel: TButton;
+    btnOpenOldEditor: TButton;
+    edTranslationTest: TEdit;
     procedure FormCreate(Sender: TObject);
     procedure TitleActionUpdate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
@@ -66,15 +71,18 @@ type
     procedure btnCopyTextsToClipboardClick(Sender: TObject);
     procedure btnPasteLanguageClick(Sender: TObject);
     procedure btnDelLanguageClick(Sender: TObject);
+    procedure btnTestTransClick(Sender: TObject);
+    procedure btnOpenOldEditorClick(Sender: TObject);
   private
-    procedure populateGridWithLanguages;
-    procedure copyGridToLang1;
     procedure ClearLang1;
     procedure ClearGrid;
     procedure DoClearAll;
     procedure DoAddLanguage(const aLang: String);
     procedure DoDeleteColumn;
+    procedure LoadNativeLanguage;
   public
+    procedure populateGridWithLanguages;
+    procedure copyGridToLang1;
   end;
 
 var
@@ -83,6 +91,9 @@ var
 implementation
 
 uses
+   // DesignEditors,
+   // DesignIntf,
+   // LangToolEditor,    // PrevEditorClass
    omNativeLanguage;  //
 
 {$R *.fmx}
@@ -123,7 +134,12 @@ var aLang:String;
 begin
   { This defines the default active tab at runtime }
   TabControl1.First(TTabTransition.None);
+  LoadNativeLanguage;
+end;
 
+procedure TFormTLangTool.LoadNativeLanguage;
+var aLang:String;
+begin
   // This app is not localized at this time, but this is how you get the
   // navive language and localize your form
   aLang := Copy(NativeLanguage,1,2);   // like 'en' or 'pt'   get native language ( drop coutry part )
@@ -340,6 +356,7 @@ begin
   c:=0;  //Originals
 
   aCol := TransGrid.Columns[0];
+
   for r :=0 to TransGrid.RowCount-1 do
   begin
     aText := TransGrid.Cells[c,r];
@@ -386,6 +403,27 @@ begin
 
       Lang1.SaveToFile(fn);
     end;
+end;
+
+procedure TFormTLangTool.btnOpenOldEditorClick(Sender: TObject);
+// var s:string; aOldEditor:TComponentEditor;
+begin
+//   if Assigned(PrevEditorClass) then
+//   begin
+//     s := 'PrevEditorClass ok:';
+//     aOldEditor := TComponentEditor(PrevEditorClass.Create(Lang1,{ADesigner:}nil ));
+//     if Assigned(aOldEditor) then aOldEditor.Edit;
+//   end
+//   else s := 'PrevEditorClass nil';
+//   labHeaderLangTool.Text := s;
+end;
+
+procedure TFormTLangTool.btnTestTransClick(Sender: TObject);
+var s:String;
+begin
+  LoadNativeLanguage;
+  s := Translate(edTranslationTest.Text );  //test 'Yes'
+  labHeaderLangTool.Text := s;
 end;
 
 procedure TFormTLangTool.FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
