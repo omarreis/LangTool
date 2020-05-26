@@ -10,7 +10,7 @@ alternative TLang Component Editor.
 
 Tested on Windows 10 (Delphi 10.3.3)
 
-## What's inside LNG files ?
+## What's inside TLang and LNG files ?
 * List of *Original* texts (TStrings) 
 * List of translation *Resources*.   Each resource (language) has: 
     * lang code: two letter ISO language code ( use capital letters )
@@ -18,8 +18,11 @@ Tested on Windows 10 (Delphi 10.3.3)
 
 Languages can be loaded from a file or from form resources.
 The last loaded language goes into global var Lang:TStringList
-
-Translate() function does translations at run time. 
+This is a list of text=translation lines.
+Variable Lang  is used to translate components 
+every time the component style is rendered.
+All this is implemented on FMX at a basic level.
+Use Translate() to do translations at run time. 
     
 ## LangTool  features : 
 * Load/Save *.LNG files 
