@@ -22,13 +22,14 @@ This is a list of text=translation lines.
 Variable Lang  is used to translate components 
 every time the component style is rendered.
 All this is implemented on FMX at a basic level.
-Use Translate() to do translations at run time. 
+Use function *Translate()* to tgranslate at run time. 
     
 ## LangTool  features : 
 * Load/Save *.LNG files 
 * Add/delete languages
-* Edit all languages in the same grid (uses a TStringGrid, edit strings in place)
-* Copy original list of texts to clipboard (ex: to use with Google Translate) 
+* Edit all languages in the same grid. One langge per column
+(LangTool uses a TStringGrid and allows editing cells in place)
+* Copy original list of texts to clipboard  (ex: to use with Google Translate ) 
 * Paste list of strings from clipboard (input translation results). 
   Before pasting a list of strings from clipboard remember to **place the cursor in the desired cell** 
   Place cursor on the top of the column to paste a whole new language ( list of strings )
