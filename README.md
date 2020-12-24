@@ -10,7 +10,7 @@ This app offers some features not found in the original TLang IDE Language Desig
 Add a *TLang* component to the form to manage language translations.
 * TLang component editor can import texts from the form, for translation
 * TLang translates all form Texts at startup
-* Translate() function can be used to translate texts at run time
+* Use Translate() func to translate texts at run time
 
      *tested w/ D10.4.1 Sydney*
 
