@@ -1,13 +1,13 @@
 ![LangTool](LangToolLogo2.png)
 # LangTool
 
-## tl;dr - Alternative TLang component editor, to maintain your app language translations.
+## tl;dr - Alternative TLang component editor, to maintain app language translations.
 
 LangTool is a language editor for Delphi Firemonkey, to help with app localization.
 It manages LNG ( language files ) to be used with component TLang.
 This app offers some features not found in the original TLang IDE Language Designer.
 
-For Windows. tested w/ D10.4.1 Sydney
+For Windows. tested w/ D10.4.1 Sydney.
 
 LangTool can installed on the Delphi IDE as a design time package or run as a desktop app. 
 
@@ -42,6 +42,8 @@ Use function *Translate()* to tgranslate at run time.
   Place cursor on the top of the column to paste a whole new language ( list of strings )
 * Drag columns ( change language order, not that this matters.. )   
   
+An empty  cell means 'leave this text untranslated' . 
+  
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
 
@@ -52,8 +54,10 @@ Compile *dclLangTool.dpk* and install it.
 Right-click a TLang component on a Form. Now you have 2 options:
 ![TLang menu](TLangMenu.png) 
 
+
 * Show LangTool Editor..              <--- LangTool 
 * Show IDE Lang Designer..            <--- Original component editor
+
 
 Original editor can be used to import texts from form, export templates  and LNG files.
 The original IDE editor, however, cannot delete languages, or edit all
