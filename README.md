@@ -21,6 +21,8 @@ The package contains no new components, only an alternative TLang Component Edit
 Langtool executable can be used independently by a translator ( single file  Win32 app )
 to edit the app's .LNG file.  LangTool grid editor integrates translations to the IDE.
 
+![LangTool screen screenshot](LangToolShot2.png) 
+
 ## What's inside TLang and LNG files ?
 
 * List of *Original* texts (TStrings) 
