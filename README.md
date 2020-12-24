@@ -42,8 +42,6 @@ Use function *Translate()* to tgranslate at run time.
   Place cursor on the top of the column to paste a whole new language ( list of strings )
 * Drag columns ( change language order, not that this matters.. )   
   
-An empty  cell means 'leave this text untranslated' . 
-  
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator - or at least a native speaker - review your app translations.
 
@@ -77,5 +75,7 @@ https://github.com/omarreis/LangTool/blob/master/fixDialogs.md
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
 ![LangTool screen screenshot](LangToolShot2.png) 
+
+An empty cell means 'leave this text untranslated'. 
 
 
