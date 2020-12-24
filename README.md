@@ -19,7 +19,7 @@ LangTool can installed on the Delphi IDE as a design time package or run as a de
 The package contains no new components, only an alternative TLang Component Editor.
 
 Langtool executable can be used independently by a translator ( single file  Win32 app )
-Component editor integrates translations to the IDE.
+to edit the app's .LNG file.  LangTool grid editor integrates translations to the IDE.
 
 ## What's inside TLang and LNG files ?
 
