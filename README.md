@@ -12,7 +12,7 @@ Add a *TLang* component to the form to manage language translations.
 * TLang translates all form Texts at startup
 * Translate() function can be used to translate texts at run time
 
-     *For Windows. tested w/ D10.4.1 Sydney*
+     *tested w/ D10.4.1 Sydney*
 
 LangTool can installed on the Delphi IDE as a design time package or run as a desktop app. 
 
