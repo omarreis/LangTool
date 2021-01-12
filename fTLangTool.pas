@@ -61,6 +61,7 @@ type
     btnCancel: TButton;
     btnOpenOldEditor: TButton;
     edTranslationTest: TEdit;
+    labVersion2: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure TitleActionUpdate(Sender: TObject);
     procedure FormKeyUp(Sender: TObject; var Key: Word; var KeyChar: Char; Shift: TShiftState);
@@ -91,14 +92,9 @@ var
 implementation
 
 uses
-   // DesignEditors,
-   // DesignIntf,
-   // LangToolEditor,    // PrevEditorClass
    omNativeLanguage;  //
 
 {$R *.fmx}
-{$R *.LgXhdpiPh.fmx ANDROID}
-{$R *.iPhone4in.fmx IOS}
 
 function TryGetClipboardService(out _clp: IFMXClipboardService): boolean;
 begin

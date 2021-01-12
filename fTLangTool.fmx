@@ -2,8 +2,8 @@ object FormTLangTool: TFormTLangTool
   Left = 0
   Top = 0
   Caption = 'LangTool'
-  ClientHeight = 634
-  ClientWidth = 1107
+  ClientHeight = 618
+  ClientWidth = 1083
   FormFactor.Width = 1440
   FormFactor.Height = 900
   FormFactor.Devices = [Desktop]
@@ -11,7 +11,7 @@ object FormTLangTool: TFormTLangTool
   DesignerMasterStyle = 0
   object TopToolBar: TToolBar
     Anchors = []
-    Size.Width = 1107.000000000000000000
+    Size.Width = 1083.000000000000000000
     Size.Height = 44.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -19,12 +19,13 @@ object FormTLangTool: TFormTLangTool
       Action = TitleAction
       Align = Contents
       Enabled = True
-      StyledSettings = [Family, Style, FontColor]
-      Size.Width = 1107.000000000000000000
+      StyledSettings = [Family, Style]
+      Size.Width = 1083.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = 'toollabel'
       TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = claBrown
       TextSettings.HorzAlign = Center
       Text = 'LangTool by oMAR'
     end
@@ -43,7 +44,7 @@ object FormTLangTool: TFormTLangTool
       Align = MostRight
       Enabled = True
       ImageIndex = -1
-      Position.X = 1063.000000000000000000
+      Position.X = 1039.000000000000000000
       Size.Width = 44.000000000000000000
       Size.Height = 44.000000000000000000
       Size.PlatformDefault = False
@@ -53,18 +54,18 @@ object FormTLangTool: TFormTLangTool
   object TabControl1: TTabControl
     Align = Client
     FullSize = True
-    Size.Width = 1107.000000000000000000
-    Size.Height = 546.000000000000000000
+    Size.Width = 1083.000000000000000000
+    Size.Height = 530.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
     TabIndex = 0
     TabOrder = 1
     TabPosition = None
     Sizes = (
-      1107s
-      546s
-      1107s
-      546s)
+      1083s
+      530s
+      1083s
+      530s)
     object TabItem1: TTabItem
       CustomIcon = <
         item
@@ -80,7 +81,7 @@ object FormTLangTool: TFormTLangTool
       ExplicitSize.cy = 8.000000000000000000
       object layoutTopLangPg1: TLayout
         Align = Top
-        Size.Width = 1107.000000000000000000
+        Size.Width = 1083.000000000000000000
         Size.Height = 97.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
@@ -206,13 +207,13 @@ object FormTLangTool: TFormTLangTool
         Align = Client
         CanFocus = True
         ClipChildren = True
-        Size.Width = 1107.000000000000000000
-        Size.Height = 449.000000000000000000
+        Size.Width = 1083.000000000000000000
+        Size.Height = 433.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         RowCount = 1000
-        Viewport.Width = 1087.000000000000000000
-        Viewport.Height = 408.000000000000000000
+        Viewport.Width = 1063.000000000000000000
+        Viewport.Height = 392.000000000000000000
         object StringColumn1: TStringColumn
           Size.Width = 150.000000000000000000
         end
@@ -268,8 +269,8 @@ object FormTLangTool: TFormTLangTool
       object rectAboutLangTool: TRectangle
         Anchors = []
         Fill.Color = claBlack
-        Position.X = 391.417236328125000000
-        Position.Y = 40.000000000000000000
+        Position.X = 379.538269042968800000
+        Position.Y = 34.710617065429690000
         Size.Width = 313.000000000000000000
         Size.Height = 281.000000000000000000
         Size.PlatformDefault = False
@@ -332,27 +333,28 @@ object FormTLangTool: TFormTLangTool
   object BottomToolBar: TToolBar
     Align = Bottom
     Anchors = [akLeft]
-    Position.Y = 590.000000000000000000
-    Size.Width = 1107.000000000000000000
+    Position.Y = 574.000000000000000000
+    Size.Width = 1083.000000000000000000
     Size.Height = 44.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'bottomtoolbar'
     TabOrder = 2
     object Label3: TLabel
-      StyledSettings = [Family, Size, FontColor]
+      StyledSettings = [Family, Size]
       Position.X = 16.000000000000000000
       Position.Y = 16.000000000000000000
       Size.Width = 529.000000000000000000
       Size.Height = 17.000000000000000000
       Size.PlatformDefault = False
-      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.Font.StyleExt = {04070000000000000004000000}
+      TextSettings.FontColor = claBlue
       Text = 'check https://github.com/omarreis/LangTool'
       TabOrder = 1
     end
     object btnOk: TButton
       Anchors = [akTop, akRight]
       ModalResult = 1
-      Position.X = 1012.000000000000000000
+      Position.X = 988.000000000000000000
       Position.Y = 8.000000000000000000
       TabOrder = 4
       Text = 'Ok'
@@ -360,10 +362,15 @@ object FormTLangTool: TFormTLangTool
     object btnCancel: TButton
       Anchors = [akTop, akRight]
       ModalResult = 2
-      Position.X = 924.000000000000000000
+      Position.X = 900.000000000000000000
       Position.Y = 8.000000000000000000
       TabOrder = 3
       Text = 'Cancel'
+    end
+    object labVersion2: TLabel
+      Position.X = 384.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'v 1.1'
     end
   end
   object SaveDialog1: TSaveDialog

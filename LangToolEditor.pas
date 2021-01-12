@@ -37,14 +37,20 @@ constructor TLangToolComponentEditor.Create(AComponent: TComponent; ADesigner: I
 begin
   inherited Create(AComponent, ADesigner);
 
-  IF Assigned(PrevEditorClass) THEN BEGIN  //must be
-    fOldEditor := TComponentEditor(PrevEditorClass.Create(AComponent, ADesigner));
-  END;
+  IF Assigned( PrevEditorClass ) THEN //must be
+    fOldEditor := TComponentEditor(PrevEditorClass.Create(AComponent, ADesigner))
+    else fOldEditor := nil;
 end;
 
 destructor TLangToolComponentEditor.Destroy;
 begin
-  inherited;
+  if Assigned(fOldEditor) then
+    begin
+      fOldEditor.Free;
+      fOldEditor := nil;
+    end;
+
+  inherited;   // test: jan21: invalid access when Delphi is closed
 end;
 
 function TLangToolComponentEditor.GetVerbCount: Integer;
@@ -58,6 +64,8 @@ begin
     0: Result := 'Show &LangTool Editor..';
     1: IF Assigned(fOldEditor) THEN Result := 'Show IDE Lang Designer..'
          else Result := 'Old editor not found';
+  else
+    Result := 'LangTool supports 2 verbs.';
   end;
 end;
 
@@ -68,6 +76,8 @@ begin
     1: IF Assigned(FOldEditor) THEN FOldEditor.Edit
        else MessageDlg('Old editor not found', TMsgDlgType.mtInformation,
          [TMsgDlgBtn.mbOk], 0);
+  else
+    raise ENotImplemented.Create('LangTool supports 2 verbs.');
   end;
 end;
 
@@ -96,7 +106,7 @@ begin
     // Set curent value to designer form
     aLangSrc  := (Component as TLang);
     aLangDest := DesignerForm.Lang1;
-    AssignTLang(aLangSrc,aLangDest);         // Componemnt --> LangTool.Lang1
+    AssignTLang(aLangSrc, aLangDest);         // Componemnt --> LangTool.Lang1
     DesignerForm.populateGridWithLanguages;  // Lang1 --> grid
     // Show ModalForm, and then take result
     if DesignerForm.ShowModal = mrOK then     // modal
@@ -105,8 +115,8 @@ begin
         aLangSrc := DesignerForm.Lang1;
         aLangDest:= (Component as TLang);
         AssignTLang(aLangSrc,aLangDest);         // as in aLangDest.Assign( aLangSrc );
+        Designer.Modified;
       end;
-    Designer.Modified;
   finally
     DesignerForm.Free;
   end;
@@ -119,7 +129,7 @@ VAR
 BEGIN
   aLang := TLang.Create(NIL);
   TRY
-    Editor := GetComponentEditor(aLang, NIL);
+    Editor := GetComponentEditor( aLang, NIL);  // get original Delphi TLang editor
     IF Assigned(Editor) THEN BEGIN
       PrevEditorClass := TComponentEditorClass((Editor AS TObject).ClassType);
     END;

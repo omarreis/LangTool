@@ -1,4 +1,4 @@
-package dclLangTool;
+package dclLangTool;   //design time TLang component editor
 
 {$R *.res}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
@@ -25,6 +25,7 @@ package dclLangTool;
 {$IMAGEBASE $400000}
 {$DEFINE DEBUG}
 {$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'oMARs LangTool translations editor'}
 {$DESIGNONLY}
 {$IMPLICITBUILD ON}
 
@@ -34,9 +35,5 @@ requires
   designide;
 
 contains
-  // FormLangToolPropEditorTest in 'FormLangToolPropEditorTest.pas' {FormTestCompDesigner},
-
-  LangToolEditor in 'LangToolEditor.pas',
-  fTestLangToolPropertyEditor in 'fTestLangToolPropertyEditor.pas' {Form1};
-
+  LangToolEditor in 'LangToolEditor.pas';
 end.
