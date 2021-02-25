@@ -21,12 +21,14 @@ Right-Click TLang to open component editor. TLang imports texts from the form(s)
      
 Note feb/21: I found TLang component is *deprecated* in D10.4.2, along with VCL integrated localization. It works fine for now, but will be no longer supported. 
 
-LangTool can installed on the Delphi IDE as a design time package or run as a desktop app. 
+## LangTool package
+LangTool can installed as a design time package on the Delphi IDE. 
+The IDE package contains no new components, only an alternative TLang Component Editor.
+LangTool allows IDE integrated translation  work ( human or otherwise )
 
-The package contains no new components, only an alternative TLang Component Editor.
-
-Langtool executable can be used independently by a translator ( single file  Win32 app )
-to edit the app's .LNG file.  LangTool grid editor integrates translations to the IDE.
+## LangTool desktop app
+Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
+The translator uses the grid to input the text translations. Copy-Paste feature allows moving translations To-From spreadsheets and translation services like Google Translate.
 
 ![LangTool screen screenshot](LangToolShot2.png) 
 
@@ -59,7 +61,7 @@ Use function *Translate()* to tgranslate at run time.
 Note that automatic translation services a lot of times translate words out of context.
 Have a translator or at least a native speaker, review app translations.
 
-## LangTool installation
+## LangTool IDE installation
 LangTool installs on the IDE as a design time package.
 Compile *dclLangTool.dpk* and install it.
 
