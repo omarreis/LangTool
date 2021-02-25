@@ -4,15 +4,22 @@
 ## tl;dr - Alternative TLang component editor, to maintain app language translations.
 
 LangTool is a language editor for Delphi Firemonkey, to help with app localization.
-It manages LNG ( language files ) to be used with component TLang.
-This app offers some features not found in the original TLang IDE Language Designer.
 
-Add a *TLang* component to the form to manage language translations.
-* TLang component editor can import texts from the form, for translation
-* TLang translates all form Texts at startup
-* Use Translate() func to translate texts at run time
+It manages LNG ( language files ) to be used with component TLang.
+TLang is FMX library languages container. It has a custom component editor.
+This package offers complementary features, not present in the original TLang editor.
+
+To localize your app, add a *TLang* component to the form. It will manage the language translations.
+Right-Click TLang to open component editor. TLang imports texts from the form(s).
+
+* TLang translates all form Texts at startup, when component style is rendered. 
+* Translate() function is used by many FMX components when rendering ( TLabel, TEdit, TMemo..)
+* When loaded, TLang copies translation resources to a global var, which FMX uses to access translations from multiple files.
+* Use Translate() func to translate texts at run time.
 
      *tested w/ D10.4.1 Sydney*
+     
+Note feb/21: I found TLang component is *deprecated* in D10.4.2, along with VCL integrated localization. It works fine for now, but will be no longer supported. 
 
 LangTool can installed on the Delphi IDE as a design time package or run as a desktop app. 
 
