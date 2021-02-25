@@ -50,16 +50,16 @@ Use function *Translate()* to tgranslate at run time.
 ## LangTool  features : 
 * Load/Save *.LNG files 
 * Add/delete languages
-* Edit all languages in the same grid. One language per column
-( LangTool uses a standard TStringGrid that allows editing cells in place )
+* Edit all languages in the same grid. One language per column. LangTool uses a standard TStringGrid that allows editing cells in place.
+* An empty cell means 'leave this text untranslated'. 
 * Copy original list of texts to clipboard   (ex: to use with Google Translate ) 
-* Paste list of strings from clipboard (to input translation results). 
+* Paste list of strings from clipboard, to input translation results. 
   Before pasting a list of strings from clipboard remember to **place the cursor in the desired cell** 
   Place cursor on the top of the column to paste a whole new language ( list of strings )
 * Drag columns ( change language order, not that this matters.. )   
   
 Note that automatic translation services a lot of times translate words out of context.
-Have a translator or at least a native speaker, review app translations.
+Have a human translator (or at least a native speaker) review app translations.
 
 ## LangTool IDE installation
 LangTool installs on the IDE as a design time package.
@@ -69,9 +69,9 @@ Right-click a TLang component on a Form. Now you have 2 options:
 ![TLang menu](TLangMenu.png) 
 
 * Show LangTool Editor..              <--- LangTool 
-* Show IDE Lang Designer..            <--- Original component editor
+* Show IDE Lang Designer..            <--- Original TLang component editor
 
-Original editor can be used to import texts from form, export templates  and LNG files.
+Original editor can be used to import texts from form, export templates and LNG files.
 The original IDE editor, however, cannot delete languages, or edit all
 languages in the same grid, or copy-paste languages to-from translation services.
 For that you now have LangTool   :)
