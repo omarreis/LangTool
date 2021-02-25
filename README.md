@@ -28,7 +28,7 @@ LangTool allows IDE integrated translation  work ( human or otherwise )
 
 ## LangTool desktop app
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
-The translator uses the grid to input the text translations. Copy-Paste feature allows moving translations To-From spreadsheets and translation services like Google Translate.
+The translator uses the grid to input the text translations. Multi line Copy-Paste feature allows moving translations to-from spreadsheets and translation services like Google Translate. Work is saved to LNG file and latter imported from the Delphi IDE.
 
 ![LangTool screen screenshot](LangToolShot2.png) 
 
