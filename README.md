@@ -19,9 +19,9 @@ Right-Click TLang to open component editor. TLang imports texts from the form(s)
 
    *tested w/ D10.4.2 Jan22* 
 
-# Currect status - Mar/22
+## Project News  
 * feb/21: It seems TLang component is *deprecated* from D10.4.2+, along with VCL integrated localization. It works for now, but will be no longer supported by EMB. 
-* mar/22: Delphi 11 deprecated TLang (Mar/22).
+* mar/22: Delphi 11 deprecated TLang (Mar/22). Working ok on D10.4.2.
 
 ## LangTool package
 LangTool can installed as a design time package on the Delphi IDE. 
