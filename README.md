@@ -36,6 +36,8 @@ To see LangTool in action:
  * add a TLang component 
  * right-click the component. LangTool editor appears in the Edit menu ( see image ).
 
+![TLang menu](TLangMenu.png) 
+
 ## LangTool as a WIndows desktop app
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
 The translator uses the grid to input the text translations. Multi line Copy-Paste feature allows moving translations to and from spreadsheets and translation services like Google Translate. Work is saved to LNG file and latter imported on Delphi IDE.
