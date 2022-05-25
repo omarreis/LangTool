@@ -29,16 +29,16 @@ LangTool allows IDE integrated translation  work ( human or otherwise )
 
 * open dclLangTool.dpk. Build and install the package.  
 
-When you install *LangTool* package aparently nothing happens. No component is added.
+When you install *LangTool* package apparently nothing happens. No component is added to the palette.
 To see LangTool in action:
 
  * create a Firemonkey Form 
  * add a TLang component 
- * right-click the component. LangTool editor appears in the Edit menu ( see image ).
+ * right-click the component. LangTool editor appears in the Edit menu ( see image below ).
 
 ![TLang menu](TLangMenu.png) 
 
-## LangTool as a WIndows desktop app
+## LangTool as a Windows desktop app
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
 The translator uses the grid to input the text translations. Multi line Copy-Paste feature allows moving translations to and from spreadsheets and translation services like Google Translate. Work is saved to LNG file and latter imported on Delphi IDE.
 
