@@ -30,11 +30,11 @@ LangTool allows IDE integrated translation  work ( human or otherwise )
 * open dclLangTool.dpk. Buld and install the package.  
 
 When you install *LangTool* package aparently nothing happens. No component is added.
-To see LanmgTool it in action:
+To see LangTool in action:
 
-* create a Firemonkey Form 
-* add a TLang component to it. 
-* Now right-click the component. LangTool editor is added to the component's Edit menu ( see image ).
+ * create a Firemonkey Form 
+ * add a TLang component 
+ * right-click the component. LangTool editor appears in the Edit menu ( see image ).
 
 ## LangTool as a WIndows desktop app
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
