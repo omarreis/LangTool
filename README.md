@@ -17,18 +17,22 @@ Right-Click TLang to open component editor. TLang imports texts from the form(s)
 * When loaded, TLang copies translation resources to a global var, which FMX uses to access translations from multiple files.
 * Use Translate() func to translate texts at run time.
 
-   *tested w/ D10.4.2 Jan22* 
-
 ## Project News  
 * feb/21: It seems TLang component is *deprecated* from D10.4.2+, along with VCL integrated localization. It works for now, but will be no longer supported by EMB. 
 * mar/22: Delphi 11 deprecated TLang (Mar/22). Working ok on D10.4.2.
+* Mai/22: Tested ok with D11.1 Alexandria. *TLang* is no longer supported by Embarcadero, but the code is still there :)  
 
-## LangTool package
-LangTool can installed as a design time package on the Delphi IDE. 
+## LangTool as design package
+LangTool can be installed as a design time package on the Delphi IDE. 
 The IDE package contains no new components, only an alternative TLang Component Editor.
 LangTool allows IDE integrated translation  work ( human or otherwise )
 
-## LangTool desktop app
+* open dclLangTool.dpk. Buld and install the package.  
+
+When you install *LangTool* package aparently nothing happens. No component is added.
+To see LanmgTool it in action, create a Firemonkey Form and add a TLang component to it. Now right-click the component. LangTool editor is added to the component Edit menu ( see image ).
+
+## LangTool as a desktop app
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
 The translator uses the grid to input the text translations. Multi line Copy-Paste feature allows moving translations to-from spreadsheets and translation services like Google Translate. Work is saved to LNG file and latter imported from the Delphi IDE.
 
@@ -49,7 +53,7 @@ every time the component style is rendered.
 All this is implemented on FMX at a basic level.
 Use function *Translate()* to tgranslate at run time. 
     
-## LangTool  features : 
+## LangTool  features: 
 * Load/Save *.LNG files 
 * Add/delete languages
 * Edit all languages in the same grid. One language per column. LangTool uses a standard TStringGrid that allows editing cells in place.
