@@ -27,7 +27,7 @@ LangTool can be installed as a design time package on the Delphi IDE.
 The IDE package contains no new components, only an alternative TLang Component Editor.
 LangTool allows IDE integrated translation  work ( human or otherwise )
 
-* open dclLangTool.dpk. Buld and install the package.  
+* open dclLangTool.dpk. Build and install the package.  
 
 When you install *LangTool* package aparently nothing happens. No component is added.
 To see LangTool in action:
