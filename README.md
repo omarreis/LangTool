@@ -42,6 +42,8 @@ To see LangTool in action:
 Langtool can be compiled as a standalone executable (single file Win32 application). It can be sent to a human translator along with the .LNG file. 
 The translator uses the grid to input the text translations. Multi line Copy-Paste feature allows moving translations to and from spreadsheets and translation services like Google Translate. Work is saved to LNG file and latter imported on Delphi IDE.
 
+Both the package and the desktop LangTool  use the same interface:
+
 ![LangTool screen screenshot](LangToolShot2.png) 
 
 ## What's inside TLang and LNG files ?
