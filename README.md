@@ -92,12 +92,14 @@ For that you now have LangTool   :)
 
 TODO: Localize LangTool !!!!   :)
 
-But wait...There is more!
+## But wait...There is more!
 
-You may want to localize Delphi default dialog texts ( Yes, No etc). This is not done by TLang.
-To do that copy FMX.Dialogs.pas to project directory and change it 
-as described in this text: https://github.com/omarreis/LangTool/blob/master/fixDialogs.md
+You may want to localize Firemonkey's default dialog texts ( such as Yes, No, Cancel..). This is not done by TLang.
+To do that I copied FMX.Dialogs.pas to the project folder and changed one line, 
+as described in this text: https://github.com/omarreis/LangTool/blob/master/fixDialogs.md.
+Yes, I hate editing FMX files but.... 
 
+The idea for the fix comes from this page:
 https://stackoverflow.com/questions/39750219/how-to-change-at-runtime-the-value-of-smsgdlgyes-smsgdlgno-etc/61643607#61643607
 
 ![LangTool screen screenshot](LangToolShot2.png) 
